@@ -1,0 +1,3 @@
+- PHP é Uma Linguagem Backend (Hypertext Preprocessor.), Utilizada em WebSites Para Fazer Páginas e Sistemas Dinámicos;
+- Concorrente do AspNet;
+- Criado Por Rasmos Lendorf em 1995;

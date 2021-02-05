@@ -40,6 +40,7 @@ $(document).ready(function () {
 
     });
 
+    //mostra na tela
     $("#btnConsultar").click(function () {
         $.ajax({
             url: "action/UsuarioAction.php?req=2",
@@ -63,12 +64,12 @@ $(document).ready(function () {
     });
 
 
-    $("#txtCep").focusout(function () {
+   /*  $("#txtCep").focusout(function () {
         if ($("#txtCep").val().length >= 5) {
 
             var cep = $("#txtCep").val().replace("-", "");
 
-            var url = "http://correiosapi.apphb.com/cep/" + cep;
+            var url = "https://viacep.com.br/ws/" + cep + "/json/"
             console.log(url);
             $.ajax({
                 url: url,
@@ -81,8 +82,8 @@ $(document).ready(function () {
                         $("#txtLogradouro").val(data.tipoDeLogradouro);
                         $("#txtRua").val(data.logradouro);
                         $("#txtBairro").val(data.bairro);
-                        $("#txtCidade").val(data.cidade);
-                        $("#txtEstado").val(data.estado);
+                        $("#txtCidade").val(data.localidade);
+                        $("#txtEstado").val(data.uf);
                     }
                 },
                 error: function (error) {
@@ -90,7 +91,7 @@ $(document).ready(function () {
                 }
             });
         }
-    });
-});
+    });*/
+}); 
 
 //date("Y-m-d H:i:s").txt;
